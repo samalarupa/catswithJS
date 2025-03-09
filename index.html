@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <title>JavaScript1</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scrollbar-width: none;
+        }
+
+        .container-fluid {
+            width: 100vw;
+            height: 100vh;
+            padding: 30px;
+            background-image: url(cat.png);
+            background-size: ;
+        }
+
+        .con {
+            padding: 20px;
+            height:;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 100px;
+            overflow: scroll;
+        }
+
+        .styl {
+            background: #ffe6b3;
+            color: #5a3e1b;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            border-radius: 10px;
+            max-width: 250px;
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        .styl2 {
+             background: #dcc85a; 
+            color: #5a3e1b;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            border-radius: 10px;
+            max-width: 250px;
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+        }
+        .help{
+            margin-top:5px;
+        }
+        .styl3 {
+            background: #ffe6b3;
+            color: #5a3e1b;
+            font-size: 18px;
+            font-weight: bold;
+            font-family: 'Comic Sans MS', cursive, sans-serif;
+            border-radius: 10px;
+            max-width: 300px;
+            text-align: center;
+            margin-top: 20px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid d-flex justify-content-center align-items-center  gap-3 flext-wrap">
+        <!-- <button class="styl btn btn-warning">Psst... Tap the cat for a secret meow! 🐾😸</button> -->
+        <div class=" con mt-2 d-flex justify-content-center align-items-center flex-column gap-3" id="s1">
+            <img src="sleepy.png" class="rounded " width="300px" height="300px">
+            <h5 class="styl m-1">🐾 "Hey, hooman! I’m sitting here waiting… click me before I take a nap! 😴"</h5>
+        </div>
+        <div class=" con mt-3 d-flex   flex-column d-none" id="s2">
+            <img src="s1.png" class="rounded " width="300px" height="300px">
+            <h5 class="styl3 help">"Don’t just stare—dive into this tiramisu already! 🍰😋
+            You want cake but don’t have any?  </h5>
+
+        </div>
+        <!-- <div class=" con  d-flex  flex-column d-none" id="s3">
+            <img src="s2.png" class="rounded" width="300px" height="200px">
+            <h5 class="styl">A rich and creamy Lotus Biscoff cheesecake with a caramelized biscuit crunch. 🍪✨ The
+                perfect blend of smooth cheesecake and spiced cookie goodness! 😍 </h5>
+
+        </div> -->
+         <div class=" con  d-flex d-none flex-column" id="s4">
+            <img src="s3.png" class="rounded" width="300px" height="200px">
+            <h5 class="styl">Warm, fluffy cinnamon rolls drizzled with sweet vanilla icing! 🍂🍞✨ A perfect blend of
+                soft dough, rich cinnamon filling, and a melt-in-your-mouth glaze. 😍</h5>
+
+        </div>
+        <div class=" con   d-flex d-none flex-column" id="s5">
+            <img src="s4.png" class="rounded " width="300px" height="300px">
+            <h5 class="styl"> You're still here? Staring at desserts? 😼 Just go get one!</h5>
+
+        </div>
+         <!-- <div class=" con  d-flex d-none flex-column" id="s6">
+            <img src="s5.png" class="rounded" width="300px" height="300px">
+            <h5 class="styl"> Let me guess… You want cake but don’t have any? Tsk tsk. Sad life, human.</h5>
+
+        </div> --> -->
+        <button class="styl2 btn btn-warning" id="button1" onclick="move()">Click for a Fortune! 🐾</button>
+        <button class="styl2 btn btn-warning d-none" id="button2" onclick="move2()">Click for a Fortune! 🐾</button>
+        <button class="styl2 btn btn-warning d-none" id="button3" onclick="move3()">Click for a Fortune! 🐾</button>
+    </div>
+    <script>
+        function move() {
+            document.getElementById('s1').classList.toggle('d-none');
+            document.getElementById('s2').classList.toggle('d-none');
+            document.getElementById('button1').classList.toggle('d-none');
+            document.getElementById('button2').classList.toggle('d-none');
+            
+        }
+        function move2() {
+            document.getElementById('s2').classList.toggle('d-none');
+            document.getElementById('s5').classList.toggle('d-none');
+            document.getElementById('button2').classList.toggle('d-none');
+            document.getElementById('button1').classList.toggle('d-none');
+            
+        }
+        
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
